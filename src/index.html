@@ -1,0 +1,27 @@
+<html lang="en-US">
+  <head>
+    <title>Nasa</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get Rover image</h1>
+      <label for="userData"></label>
+      <input id="userData" type="number"/>
+      <button class="btn-success" id="showImage">ok</button>
+      <button class="btn-success" id="showNEO">NEOs</button>
+      <p id="imageDate"></p>
+      <div id="roverImage">
+        <!-- Rover images -->
+      </div>
+      <div>
+        <table id="nearEarthObjects">
+          <tr>
+            <th>Name</th>
+            <th>Distance from Earth</th>
+          </tr>
+          <!-- New rows appended here on showNEO button click -->
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
