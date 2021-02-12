@@ -5,12 +5,25 @@ import './css/styles.css';
 import RoverImage from './js/roverImage.js';
 
 function displayImage(response) {
-  if (response.photos) {
-    $('#imageDate').text(`Date of image: ${response.photos[0].earth_date}`);
-    $('#roverImage').html(`<img src="${response.photos[0].img_src}" alt="Rover Image" height="200">`);
+  if (response.photos.length >  0) {
+    let imageCounter = 0;
+    for (let i = 0; i < 4; i++) {
+      $('#roverImage').append(`<div class="row" id="imageRow${i}"></div>`);
+      for (let j = 0; j < 4; j++) {
+        $(`#imageRow${i}`).append(`<div class="col-md-3">
+        <div>Image ID: ${response.photos[imageCounter].id}</div>
+        <img src="${response.photos[imageCounter].img_src}" alt="Rover Image" ${imageCounter+1} width="200">
+        </div>`);
+        imageCounter ++;
+      }
+    }
   } else {
     $('#imageDate').text(`Woops! There was an error: ${response.message}`);
   }
+}
+
+function clearContent() {
+  $('.row .col-md-3').remove();
 }
 
 function displayNEO() {
@@ -19,6 +32,7 @@ function displayNEO() {
 
 $(document).ready(function() {
   $('#showImage').click(function() {
+    clearContent();
     const sol = $('#userData').val();
     RoverImage.getImage(sol)
       .then(function(response) {

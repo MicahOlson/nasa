@@ -2,3 +2,20 @@ table, th, td {
   border: solid 1px #000000;
   padding: 4px;
 }
+
+/* div {
+  padding: 4px;
+} */
+
+#nearEarthObjects {
+  display: none;
+}
+
+.col-md-3 {
+  padding-left: 5%;
+}
+
+/* .img {
+  width: 5%;
+  height: 5%;
+} */
