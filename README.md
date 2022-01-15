@@ -1,50 +1,33 @@
-# (Blank Template)
+# NASA
 
-#### (Brief Description of Application)
+### _This project was created solely for the education of the author(s) and is not in a complete or portfolio-ready state. It should not be considered representative of polished and/or professional work._
+\
+[Epicodus](https://www.epicodus.com/) - [Intermediate JavaScript](https://www.learnhowtoprogram.com/intermediate-javascript/) - [Week 3, Lesson 25](https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/martian-weather-bike-index-api-of-choice-two-day-project)  
 
-#### By (Your Name Here)
+Date created: 2021-02-10
 
-## Technologies Used
-
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+## Authors 
+Olha Hizhytska  
+Levi Kohler  
+Micah L. Olson
 
 ## Description
+_Asynchrony & APIs: Martian Weather_  
+A goal of this exercise is to practice using all of the build tools learned so far to create an app centered around a choice of public JSON APIs which support CORS, testing all API calls with Postman first.  
+* Experiment with different tools for working with asynchrony, including callbacks, promises, the Fetch API, and async functions
+* Make multiple API calls in the application
+* Separate out logic clearly, including keeping business logic separate from service and UI logic if necessary
+* Experiment with chaining promises
 
-## Setup/Installation Requirements
-
-### Without Github template clone:
-* Clone Repo
-* Delete .git if needing a clean commit history
-* Initilize git
-* Add remote repository to new git
-* Make first commit only adding .gitignore to commit
-* Open new repo to begin npm initilization
-
-### With Github
-* Press use this template
-* Create new repo
-* Clone new repo down to
-* Open new repo to begin npm initilization
-
-### Npm Initilization
-* Verify package.json has correct npm packages for needs
-* Modify title on line 18 of webpack.config.js
-* Modify title on line 2 of package.json
-* Modify description on line 19 of package.json
-* Modify title on line 2 if package-lock.json
-* Run ```npm init -y```
-* Run ```npm install```
-* Verify install works by running ```npm run test``` and ```npm run build```
-
-* * *
-## Known Bugs
-
-* _Any known issues_
-* _should go here_
+## Technologies Used
+* npm
+* webpack
+* HTML5
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
+* ESLint
 
 ## License
-
-## Contact Information
+[MIT](LICENSE) - Copyright &copy; 2021 Olha Hizhytska, Levi Kohler, Micah L. Olson
